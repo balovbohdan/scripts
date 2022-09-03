@@ -64,11 +64,15 @@ function M.setup()
 		-- Better Netrw
     use { "tpope/vim-vinegar" }
 
+		-- Patched Icons
+		use { "ryanoasis/vim-devicons" }
+
 		-- Dir Tree
     use {
       "kyazdani42/nvim-tree.lua",
       requires = {
-        "kyazdani42/nvim-web-devicons",
+        "ryanoasis/vim-devicons",
+				"kyazdani42/nvim-web-devicons",
       },
       cmd = { "NvimTreeToggle", "NvimTreeClose" },
       config = function()

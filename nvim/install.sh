@@ -7,6 +7,10 @@ export NVIM_BALOV
 brew install neovim
 brew install stow
 
+# patch fonts
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+
 rm -rf $NVIM_BALOV
 mkdir -p $NVIM_BALOV/share
 mkdir -p $NVIM_BALOV/nvim
