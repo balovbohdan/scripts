@@ -3,6 +3,7 @@ local g = vim.g
 local opt = vim.opt
 
 -- Better Netrw
+-- Some settings are covered by "tpope/vim-vinegar"
 g.netrw_banner = 0 -- Hide banner
 g.netrw_browse_split = 2 -- Open in left pane
 g.netrw_altv = 1 -- Open with right splitting
@@ -27,6 +28,9 @@ opt.smartcase = true -- Smart case
 opt.updatetime = 250 --Decrease update time
 opt.signcolumn = "yes" -- Always show sign column
 opt.clipboard = "unnamedplus" -- Access system clipboard
+
+-- Time in milliseconds to wait for a mapped sequence to complete.
+opt.timeoutlen = 300
 
 -- Highlight on yank
 vim.cmd [[
