@@ -2,6 +2,14 @@ local api = vim.api
 local g = vim.g
 local opt = vim.opt
 
+-- Better Netrw
+g.netrw_banner = 0 -- Hide banner
+g.netrw_browse_split = 2 -- Open in left pane
+g.netrw_altv = 1 -- Open with right splitting
+g.netrw_liststyle = 3 -- Tree-style view
+g.netrw_winsize = 75
+g.netrw_list_hide = (vim.fn["netrw_gitignore#Hide"]()) .. [[,\(^\|\s\s\)\zs\.\S\+]] -- use .gitignore
+
 -- Remap leader and local leader to <Space>
 api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true, silent = true })
 g.mapleader = " "

@@ -4,7 +4,7 @@ NVIM_BALOV=~/.config/nvim-balov
 
 export NVIM_BALOV
 
-alias nvb="XDG_DATA_HOME=$NVIM_BEGINNER/share XDG_CONFIG_HOME=$NVIM_BEGINNER nvim"
+alias nvb="XDG_DATA_HOME=$NVIM_BALOV/share XDG_CONFIG_HOME=$NVIM_BALOV nvim"
 
 export nvb
 
