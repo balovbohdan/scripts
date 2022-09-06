@@ -35,6 +35,10 @@ function M.setup()
   -- Plugins
   local function plugins(use)
     use { "wbthomason/packer.nvim" }
+    
+		-- Search in folder
+		use { "ctrlpvim/ctrlp.vim" }
+    use { "dyng/ctrlsf.vim" }
 
     -- Colorscheme
     use {

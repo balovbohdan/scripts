@@ -1,5 +1,3 @@
-
-
 local M = {}
 
 function M.setup()
@@ -39,6 +37,12 @@ function M.setup()
       g = { "<cmd>FzfLua live_grep<cr>", "Live grep" },
       c = { "<cmd>FzfLua commands<cr>", "Commands" },
       e = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
+			s = {
+        name = "Search",
+				p = { "<Plug>CtrlSFPrompt", "Prompt" },
+				w = { "<Plug>CtrlSFCwordPath", "Word under cursor" },
+        l = { "<Plug>CtrlSFPwordPath", "Last search pattern" }
+			}
     },
 
     z = {

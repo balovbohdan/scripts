@@ -1,0 +1,8 @@
+../
+nvim/
+| after/
+| lua/
+| init.lua
+| install.sh
+| nvb.sh
+| stylua.toml
